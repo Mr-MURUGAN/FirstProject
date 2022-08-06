@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        li:first-child{
+            background-color:crimson;
+        }
+        li:last-child{
+            background-color: darkmagenta;
+        }
+        li:nth-child(3){
+            background-color: darkslategrey;
+        }
+        li:nth-child(odd){
+            background-color: lightcoral;
+        }
+        h1{
+            text-align: center;
+          
+        }
+        h1::before{
+            content: "MAHENDRA";
+            padding: 20px;
+        }
+        h1::after{
+            content:"DHONI";
+            padding: 20px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1> Singh </h1>
+    <ul>
+        <li>WEB</li>
+        <li>REACT</li>
+        <li>JAVA</li>
+        <li>SQL</li>
+    </ul>
+</body>
+</html>

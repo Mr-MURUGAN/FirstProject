@@ -1,0 +1,23 @@
+h1{
+    background-color: blue;
+    margin: 5;
+    padding: 4px;
+    text-align: center;
+
+}
+p{
+    background: chartreuse;
+    margin: 5;
+    padding: 40px;
+    
+    text-align: right;
+}
+div{
+    border: 4px solid black;
+}
+p{
+    border: 5px solid blue;
+    margin: 3;
+    padding: 40px;
+    text-align: left;
+} 

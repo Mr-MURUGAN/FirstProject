@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><h1 id="hh">My first Form....</h1>
+    <title>Veluform</title>
+    <style>
+        #hh{
+            border: solid darkmagenta;
+            background-color: violet;
+            text-align: center;
+            overflow: auto;
+
+        }
+        form{
+            border: 5px solid black;
+            background-color: violet;
+            padding-left: 500px;
+            height: 500px;
+            width: 57%;
+            margin: auto;
+            background-image: url(./IMG/download.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        input{
+            float: none;
+        }
+        button{
+            margin-left: 0;
+            margin-right: right;
+            
+        }
+        #last{
+            border:50px hotpink;
+            color: grey;
+            text-align: justify;
+
+        }
+        #b1{
+            
+            margin-right: 5%
+        }
+        #b0{
+            margin-right: 5%;
+        }
+    </style>
+
+</head>
+<body>
+     <form onclick="return clickMe()" action="./submit.html" >
+        <label for="fn">FIRST NAME:</label>
+        <input type="text"name ="fn" required id="fn"> <br> <br>
+         <!--if you want to make an mandatory to fill using required-->
+        <label for="ln">LAST NAME:</label>
+        <input type="text" name="ln" required id="ln"> <br> <br>
+        <label for="em">EMAIL    :</label>
+        <input type="email" name="em" required id="em"><br> <br>
+        <!--if you want to make an emil format using--- email -->
+        <label for="p">PASSWORD:    :</label>
+        <input type="password" name="em" id="em"required><br> <br>
+        <label for="cn">CONFIRM PASSWORD:</label>
+        <input type="password" name="ln" id="ln"required> <br> <br>
+         <!--if you want to make an check format using --radio-->
+        <label for="gn">GENDER:</label>
+
+
+        <input type="radio" name="gn" id="gn" style="float: none;" >MALE
+        <input type="radio" name="gn" id="gn" style="float: none;" >FEMALE
+        <input type="radio" name="gn" id="gn" style="float: none;">OTHERS<br> <br>
+            <!--if you want to make an date format using --date-->
+        <label for="dob">DATE OF BIRTH:</label>
+        <input type="date" name="em" id="em"style="float: none;"required><br> <br>
+        <label for="em">QUALIFICATION:</label>
+            <select name="QUAL" id="QUAL">
+                <option value="B.E.">B.E</option>
+                <option value="M.E.">M.E</option>
+                <option value="B.TECH.">B.TECH</option>
+                <option value="M.TECH.">M.TECH</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA.">MCA</option>
+            </select><br><br>
+            <label for="yop">YEAR OF PASS OUT:</label>
+            <input type="date" name="yop" id="yop" min="2015" max="2025" required><br> <br>
+            <label for="sub">SUBJECTS:</label>
+            <input type="checkbox" name="sub " id="sub"style="float: none;">web
+            <input type="checkbox" name="sub " id="sub"style="float: none;">REACT
+            <input type="checkbox" name="sub " id="sub"style="float: none;">JAVA
+            <input type="checkbox" name="sub " id="sub"style="float: none;">SQL <br><br>
+        <label for="em">PLACE:</label>
+        <input type="text" name="em" id="em" required><br> <br>
+        <footer id="last">
+        <button id="b0" onclick="clickMe()" type="submit"><a href="./submit.html" >SUBMIT</a></button>
+        <button id="b1" type="reset" >RESET </button>  
+        <button id="b2" type="menu"><a href="./Anchor.html"></a>CANCEL</button>  
+    </footer>
+    <script>
+        function clickMe(){
+            var x=document.getElementById("cn").value;
+            alert(x);
+        }
+    </script>
+</body>
+</html>
